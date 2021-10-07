@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://www.plcopen.org/xml/tc6_0200">
+  <fileHeader companyName="" productName="CODESYS" productVersion="CODESYS V3.5 SP14 Patch 3" creationDateTime="2021-10-07T21:04:13.3901521" />
+  <contentHeader name="BlogProject.project" modificationDateTime="2021-10-07T20:40:20.1109198">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="1" y="1" />
+      </fbd>
+      <ld>
+        <scaling x="1" y="1" />
+      </ld>
+      <sfc>
+        <scaling x="1" y="1" />
+      </sfc>
+    </coordinateInfo>
+    <addData>
+      <data name="http://www.3s-software.com/plcopenxml/projectinformation" handleUnknown="implementation">
+        <ProjectInformation />
+      </data>
+    </addData>
+  </contentHeader>
+  <types>
+    <dataTypes />
+    <pous />
+  </types>
+  <instances>
+    <configurations />
+  </instances>
+  <addData>
+    <data name="http://www.3s-software.com/plcopenxml/interface" handleUnknown="implementation">
+      <Interface name="itfEvent" ObjectId="a1bd015b-7f71-4b89-9f78-fa0c1f9822b5">
+        <Methods>
+          <Method name="getEvent" ObjectId="3f49c9c4-3324-4f87-8bd6-9354f335a595">
+            <interface>
+              <returnType>
+                <BOOL />
+              </returnType>
+            </interface>
+            <addData />
+          </Method>
+        </Methods>
+        <addData />
+      </Interface>
+    </data>
+    <data name="http://www.3s-software.com/plcopenxml/projectstructure" handleUnknown="discard">
+      <ProjectStructure>
+        <Folder Name="FactoryState">
+          <Object Name="itfEvent" ObjectId="a1bd015b-7f71-4b89-9f78-fa0c1f9822b5">
+            <Object Name="getEvent" ObjectId="3f49c9c4-3324-4f87-8bd6-9354f335a595" />
+          </Object>
+        </Folder>
+      </ProjectStructure>
+    </data>
+  </addData>
+</project>

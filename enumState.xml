@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://www.plcopen.org/xml/tc6_0200">
+  <fileHeader companyName="" productName="CODESYS" productVersion="CODESYS V3.5 SP14 Patch 3" creationDateTime="2021-10-07T21:02:08.3158574" />
+  <contentHeader name="BlogProject.project" modificationDateTime="2021-10-07T20:40:20.1109198">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="1" y="1" />
+      </fbd>
+      <ld>
+        <scaling x="1" y="1" />
+      </ld>
+      <sfc>
+        <scaling x="1" y="1" />
+      </sfc>
+    </coordinateInfo>
+    <addData>
+      <data name="http://www.3s-software.com/plcopenxml/projectinformation" handleUnknown="implementation">
+        <ProjectInformation />
+      </data>
+    </addData>
+  </contentHeader>
+  <types>
+    <dataTypes>
+      <dataType name="enumState">
+        <baseType>
+          <enum>
+            <values>
+              <value name="SYSTEM_OFF" value="0" />
+              <value name="SYSTEM_CHECK" value="1" />
+              <value name="SYSTEM_START" value="2" />
+              <value name="SYSTEM_RUN" value="3" />
+              <value name="SYSTEM_STOP" value="4" />
+              <value name="SYSTEM_ERR" value="5" />
+            </values>
+          </enum>
+        </baseType>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/enumvaluedocumentation" handleUnknown="implementation">
+            <EnumValueDocumentation>
+              <EnumValue>
+                <Name>SYSTEM_OFF</Name>
+                <Documentation>
+                  <xhtml xmlns="http://www.w3.org/1999/xhtml">Система выключена</xhtml>
+                </Documentation>
+              </EnumValue>
+              <EnumValue>
+                <Name>SYSTEM_CHECK</Name>
+                <Documentation>
+                  <xhtml xmlns="http://www.w3.org/1999/xhtml">Проверка сиситемы</xhtml>
+                </Documentation>
+              </EnumValue>
+              <EnumValue>
+                <Name>SYSTEM_START</Name>
+                <Documentation>
+                  <xhtml xmlns="http://www.w3.org/1999/xhtml">Старт системы</xhtml>
+                </Documentation>
+              </EnumValue>
+              <EnumValue>
+                <Name>SYSTEM_RUN</Name>
+                <Documentation>
+                  <xhtml xmlns="http://www.w3.org/1999/xhtml">Cистема в работе</xhtml>
+                </Documentation>
+              </EnumValue>
+              <EnumValue>
+                <Name>SYSTEM_STOP</Name>
+                <Documentation>
+                  <xhtml xmlns="http://www.w3.org/1999/xhtml">Остановка системы</xhtml>
+                </Documentation>
+              </EnumValue>
+              <EnumValue>
+                <Name>SYSTEM_ERR</Name>
+                <Documentation>
+                  <xhtml xmlns="http://www.w3.org/1999/xhtml">Ошибка системы</xhtml>
+                </Documentation>
+              </EnumValue>
+            </EnumValueDocumentation>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/attributes" handleUnknown="implementation">
+            <Attributes>
+              <Attribute Name="qualified_only" Value="" />
+              <Attribute Name="strict" Value="" />
+            </Attributes>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>9a78709c-6f6e-4b80-bf7e-2c62ee60860d</ObjectId>
+          </data>
+        </addData>
+      </dataType>
+    </dataTypes>
+    <pous />
+  </types>
+  <instances>
+    <configurations />
+  </instances>
+  <addData>
+    <data name="http://www.3s-software.com/plcopenxml/projectstructure" handleUnknown="discard">
+      <ProjectStructure>
+        <Folder Name="FactoryState">
+          <Object Name="enumState" ObjectId="9a78709c-6f6e-4b80-bf7e-2c62ee60860d" />
+        </Folder>
+      </ProjectStructure>
+    </data>
+  </addData>
+</project>

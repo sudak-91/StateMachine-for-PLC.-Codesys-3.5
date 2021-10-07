@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://www.plcopen.org/xml/tc6_0200">
+  <fileHeader companyName="" productName="CODESYS" productVersion="CODESYS V3.5 SP14 Patch 3" creationDateTime="2021-10-07T21:02:42.6996028" />
+  <contentHeader name="BlogProject.project" modificationDateTime="2021-10-07T20:40:20.1109198">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="1" y="1" />
+      </fbd>
+      <ld>
+        <scaling x="1" y="1" />
+      </ld>
+      <sfc>
+        <scaling x="1" y="1" />
+      </sfc>
+    </coordinateInfo>
+    <addData>
+      <data name="http://www.3s-software.com/plcopenxml/projectinformation" handleUnknown="implementation">
+        <ProjectInformation />
+      </data>
+    </addData>
+  </contentHeader>
+  <types>
+    <dataTypes>
+      <dataType name="udtSystem">
+        <baseType>
+          <struct>
+            <variable name="eCurrentState">
+              <type>
+                <derived name="enumState" />
+              </type>
+            </variable>
+            <variable name="arTransactions">
+              <type>
+                <array>
+                  <dimension lower="0" upper="9" />
+                  <baseType>
+                    <derived name="udtTransition" />
+                  </baseType>
+                </array>
+              </type>
+            </variable>
+          </struct>
+        </baseType>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>3b1131bd-6640-49c6-b641-e9edeefa0edf</ObjectId>
+          </data>
+        </addData>
+      </dataType>
+    </dataTypes>
+    <pous />
+  </types>
+  <instances>
+    <configurations />
+  </instances>
+  <addData>
+    <data name="http://www.3s-software.com/plcopenxml/projectstructure" handleUnknown="discard">
+      <ProjectStructure>
+        <Folder Name="FactoryState">
+          <Object Name="udtSystem" ObjectId="3b1131bd-6640-49c6-b641-e9edeefa0edf" />
+        </Folder>
+      </ProjectStructure>
+    </data>
+  </addData>
+</project>
